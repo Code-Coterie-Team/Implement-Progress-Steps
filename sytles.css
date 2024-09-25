@@ -18,6 +18,7 @@ body{
     width: 350px;
     max-width: 100%;
     margin-bottom: 30px;
+    text-align: center;
 }
 
 .line{
@@ -49,4 +50,16 @@ body{
 
 .active{
     border-color: var(--line-border-fill);
+}
+
+.btn{
+    background-color: var(--line-border-fill);
+    color: #fff;
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: inherit;
+    padding: 8px 30px;
+    margin: 20px 5px;
+    font-size: 14px;
 }
