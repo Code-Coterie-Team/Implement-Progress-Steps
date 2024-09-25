@@ -48,7 +48,7 @@ body{
     width: 30px;
 }
 
-.active{
+.activeBtn{
     border-color: var(--line-border-fill);
 }
 
