@@ -28,6 +28,7 @@ body{
     max-width: 100%;
     transform: translateY(400%);
     z-index: -1;
+    transition: width 0.6s ease;
 }
 
 .circles{

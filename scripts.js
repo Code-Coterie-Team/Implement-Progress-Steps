@@ -1,4 +1,4 @@
-const progress = document.querySelector('.line');
+const line = document.querySelector('.line');
 const circle = document.querySelectorAll('.circle');
 const prev = document.querySelector('.prev')
 const next = document.querySelector('.next')
@@ -10,6 +10,11 @@ if (activeNow == 1){
     prev.disabled = true;
 } else if (activeNow == 4){
     next.disabled = true;
+}
+
+function updateActiveLine() {
+    const progress = (activeNow - 1) / 3 * 100;
+    line.style.background = `linear-gradient(to right, #3498db ${progress}%, #e0e0e0 ${progress}%)`;    
 }
 
 function update(status){
@@ -59,6 +64,6 @@ function update(status){
             }
         }
     }
-    
+    updateActiveLine()
 }
 
